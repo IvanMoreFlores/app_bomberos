@@ -1,0 +1,7 @@
+{
+  "name": "app_bomberos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

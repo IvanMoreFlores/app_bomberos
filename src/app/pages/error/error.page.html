@@ -1,0 +1,37 @@
+<ion-content padding class="form-content">
+  <div text-center>
+    <img src="assets/img/bombero.png" width="25%">
+  </div>
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">
+          Ingrese correo electronico
+        </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          Indicaciones del error
+        </ion-label>
+        <ion-textarea rows="6" type="text"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button color="dark" expand="block" fill="solid" size="medium">
+                Ingresar
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button (click)="btn_cancelar()" color="dark" expand="block" fill="outline" size="medium">
+                Cancelar
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

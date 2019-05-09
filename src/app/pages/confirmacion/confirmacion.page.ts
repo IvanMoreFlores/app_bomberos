@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-confirmacion',
+  templateUrl: './confirmacion.page.html',
+  styleUrls: ['./confirmacion.page.scss'],
 })
-export class HomePage implements OnInit {
+export class ConfirmacionPage implements OnInit {
 
   validations_form: FormGroup;
-  constructor(public formBuilder: FormBuilder, public router: Router) {
-
+  constructor(public formBuilder: FormBuilder,
+    public navCtrl: NavController) {
   }
 
   ngOnInit() {
@@ -26,7 +26,6 @@ export class HomePage implements OnInit {
 
   onSubmit(values) {
     console.log(values);
-    this.router.navigateByUrl('/confirmacion');
   }
 
   validation_messages = {
@@ -37,12 +36,12 @@ export class HomePage implements OnInit {
     ]
   };
 
-  btn_confirmar(){
-    this.router.navigateByUrl('/confirmacion');
+  btn_cancelar() {
+    this.navCtrl.navigateBack('/home');
   }
 
-  btn_reportar(){
-    this.router.navigateByUrl('/error');
+  btn_confirmar(){
+    this.navCtrl.navigateForward('/login');
   }
 
 }

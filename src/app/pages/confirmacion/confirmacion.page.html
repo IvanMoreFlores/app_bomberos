@@ -1,0 +1,91 @@
+<ion-content padding class="form-content">
+  <div text-center>
+    <img src="assets/img/bombero.png" width="25%">
+  </div>
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">
+          Código bombero
+        </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          Ingrese nueva contraseña
+        </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          Confirme contraseña
+        </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-radio-group>
+          <ion-grid no-padding>
+            <ion-row>
+              <ion-col size="6">
+                <ion-item>
+                  <ion-label>Piloto A2</ion-label>
+                  <ion-radio slot="start" value="1" checked></ion-radio>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6">
+                <ion-item>
+                  <ion-label>Piloto A2</ion-label>
+                  <ion-radio slot="start" value="2"></ion-radio>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="6">
+                <ion-item>
+                  <ion-label>Medico</ion-label>
+                  <ion-radio slot="start" value="3" checked></ion-radio>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6">
+                <ion-item>
+                  <ion-label>Appa</ion-label>
+                  <ion-radio slot="start" value="4"></ion-radio>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="6">
+                <ion-item>
+                  <ion-label>Maptel</ion-label>
+                  <ion-radio slot="start" value="5"></ion-radio>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6">
+                <ion-item>
+                  <ion-label>Brec</ion-label>
+                  <ion-radio slot="start" value="6"></ion-radio>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button (click)="btn_cancelar()" color="dark" expand="block" fill="solid" size="medium">
+                Cancelar
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button (click)="btn_confirmar()" color="dark" expand="block" fill="outline" size="medium">
+                Confirmar
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
